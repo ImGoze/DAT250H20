@@ -53,7 +53,7 @@ Also when working with the banking-example, I added some more to the ```persiste
 
 The final results after some iterations of running ```main.java``` looked like this: 
 
-![](screenshots\kjøring.JPG)
+![kjøring](screenshots\kjøring.JPG)
 
 ### Experiment 2 
 [EXP 2: Banking example JPA](https://github.com/ImGoze/DAT250H20/tree/master/expass2/dat250-jpa-code/eclipselink/jpa-basic/src/main/java/banking)
