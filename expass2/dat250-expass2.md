@@ -63,12 +63,18 @@ Diagram for the entities in the banking-example
 
 Running ```banking.java``` a few times, outputs this: 
 
->Person(name = 'Andrè', creditCard = CreditCard(number = 4, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), >address = Address(street = Lille Damsgårdsveien', Number = 10))
->Person(name = 'Andrè', creditCard = CreditCard(number = 54, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
->Person(name = 'Andrè', creditCard = CreditCard(number = 104, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
->Person(name = 'Andrè', creditCard = CreditCard(number = 154, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
->Person(name = 'Andrè', creditCard = CreditCard(number = 204, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
->Size: 5
+```
+Person(name = 'Andrè', creditCard = CreditCard(number = 4, limit = 0, balance=250000, bank=Bank(name = 'Sparebank >1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
+
+Person(name = 'Andrè', creditCard = CreditCard(number = 54, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
+
+Person(name = 'Andrè', creditCard = CreditCard(number = 104, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
+
+Person(name = 'Andrè', creditCard = CreditCard(number = 154, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
+
+Person(name = 'Andrè', creditCard = CreditCard(number = 204, limit = 0, balance=250000, bank=Bank(name = 'Sparebank 1'), pinCode=****), address = Address(street = Lille Damsgårdsveien', Number = 10))
+Size: 5
+```
 
 
 * *An explanation of how you inspected the database tables and what tables were created. For the latter you may provide screenshots.*
