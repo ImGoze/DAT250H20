@@ -1,4 +1,4 @@
-#DAT250-expass2
+# DAT250-expass2
 * *Technical problems that you encountered during installation and use of Java Persistence Architecture (JPA) and how you resolved*
 
 When downloading the Apache Derby database, I encountered some issues. Especially when trying to ```Configure Embedded Derby```. The command: ```set CLASSPATH=%DERBY_INSTALL%\lib\derby.jar;%DERBY_INSTALL%\lib\derbytools.jar;``` Gave me the error: 
