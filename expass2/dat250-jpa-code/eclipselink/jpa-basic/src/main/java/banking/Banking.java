@@ -1,7 +1,10 @@
 package banking;
 
 import banking.entities.*;
+import no.hvl.dat250.jpa.basicexample.Todo;
+
 import javax.persistence.*;
+import java.util.List;
 
 public class Banking {
     private static EntityManagerFactory factory;
@@ -10,6 +13,14 @@ public class Banking {
     public static void main(String[] args) {
         factory = Persistence.createEntityManagerFactory(PERSISTENCE_NAME);
         EntityManager em = factory.createEntityManager();
+
+        Query q = em.createQuery("select t from Person t");
+        List<Person> list = q.getResultList();
+        for (Person p : list) {
+            System.out.println(p);
+        }
+        System.out.println("Size: " + list.size());
+
 
         em.getTransaction().begin();
         Person person = new Person();
@@ -46,7 +57,7 @@ public class Banking {
         person.setCreditCard(card);
         em.getTransaction().commit();
 
-        System.out.println(person.toString());
+        em.close();
 
     }
 }
