@@ -5,9 +5,9 @@ When downloading the Apache Derby database, I encountered some issues. Especiall
 >%DERBY_INSTALL%\lib\derbytools.jar : The module '%DERBY_INSTALL%' could not be loaded. 
 
 The way I fixed this, was to manually configure the enviroment variable %DERBY_INSTALL% and %CLASSPATH% in the config-settings of my machine. Then I encountered some more issued when trying to test the *IJ-scripting tool*. When I used the java org.apache.derby.tools.ij, it would'nt compile all files, as shown in the screenshot below: 
-![](images\jre.png)
+![jre-error](images\jre.png)
 
-Ofcoure, I then checked the ```java -version```in powershell, and I found out that I run the 1.8 version, when I should run the 14 version. I fixed this by uninstalling the other versions of java from my computer, and its now working as it should. 
+Ofcoure, I then checked the ```java -version``` in powershell, and I found out that I run the 1.8 version, when I should run the 14 version. I fixed this by uninstalling the other versions of java from my computer, and its now working as it should. 
 
 Then I cloned the maven-project from this repo on github: [https://github.com/lmkr/dat250-jpa-examples/tree/master/eclipselink/jpa-basic](https://github.com/lmkr/dat250-jpa-examples/tree/master/eclipselink/jpa-basic)
 
