@@ -5,13 +5,13 @@ When downloading the Apache Derby database, I encountered some issues. Especiall
 >%DERBY_INSTALL%\lib\derbytools.jar : The module '%DERBY_INSTALL%' could not be loaded. 
 
 The way I fixed this, was to manually configure the enviroment variable %DERBY_INSTALL% and %CLASSPATH% in the config-settings of my machine. Then I encountered some more issued when trying to test the *IJ-scripting tool*. When I used the java org.apache.derby.tools.ij, it would'nt compile all files, as shown in the screenshot below: 
-![](screenshots\jre.png)
+![](images\jre.png)
 
 Ofcoure, I then checked the ```java -version```in powershell, and I found out that I run the 1.8 version, when I should run the 14 version. I fixed this by uninstalling the other versions of java from my computer, and its now working as it should. 
 
 Then I cloned the maven-project from this repo on github: [https://github.com/lmkr/dat250-jpa-examples/tree/master/eclipselink/jpa-basic](https://github.com/lmkr/dat250-jpa-examples/tree/master/eclipselink/jpa-basic)
 
-Trying to run the project in IntellIJ I got a load of errors. The biggest of them all was when i cloned the project, it did'nt "import" it as maven, som I needed to manually import the project as Maven to fix the massive import-errors I got. After this, everything worked besides one thing: *the database..* The database wouldn't start. Here you can see the error: ![](screenshots\dbfeil.JPG)
+Trying to run the project in IntellIJ I got a load of errors. The biggest of them all was when i cloned the project, it did'nt "import" it as maven, som I needed to manually import the project as Maven to fix the massive import-errors I got. After this, everything worked besides one thing: *the database..* The database wouldn't start. Here you can see the error: ![](images\dbfeil.JPG)
 
  and I found out it was because I gave it a bad path in the ```persistence.xml```. I then changed the path to: 
  
@@ -53,13 +53,13 @@ Also when working with the banking-example, I added some more to the ```persiste
 
 The final results after some iterations of running ```main.java``` looked like this: 
 
-![kjøring](screenshots\kjøring.JPG)
+![](images\kjøring.JPG)
 
 ### Experiment 2 
 [EXP 2: Banking example JPA](https://github.com/ImGoze/DAT250H20/tree/master/expass2/dat250-jpa-code/eclipselink/jpa-basic/src/main/java/banking)
 
 Diagram for the entities in the banking-example
-![](screenshots\diagram.png)
+![](images\diagram.png)
 
 Running ```banking.java``` a few times, outputs this: 
 
@@ -84,11 +84,11 @@ When first trying to peek the banking database, I got this error:
 
 And it may have something with that I am trying to run derby 10.15.2.0, when IntellIJ only supports 14 or something like that. So I had to manually do it from terminal using ij-tools. And using simple SQL to show tables, and all from one table. It looked like this: 
 
-![](screenshots\dbbanking.JPG)
+![](images\dbbanking.JPG)
 
 Here we see the entities' corresponding tables. I also peeked the ```banking.person``` whick looks like this: 
 
-![](screenshots\banking.person.JPG)
+![](images\banking.person.JPG)
 
 * *Any pending issues with this assignment which you did not manage to solve*
 
