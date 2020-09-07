@@ -15,7 +15,7 @@ I just followed the Heroku-tutorial, and it had some good examples on how to run
 with everything working as it should. 
 
 Here you can see a screenshot of me running the environment on the localhost, building with Maven. 
-![](screenshots\hello.JPG)
+![](img\hello.JPG)
 
 * *Technical problems encountered with the Heroku platform and how you solved them*
 
