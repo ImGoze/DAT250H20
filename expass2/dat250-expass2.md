@@ -43,9 +43,6 @@ Also when working with the banking-example, I added some more to the ```persiste
     </persistence-unit>
 ```
 
-***We can see the elements of the database and its corresponding size.***
-
-
 * *A link to your code for experiment 1 and 2 above*
 
 ### Experiment 1
@@ -54,6 +51,9 @@ Also when working with the banking-example, I added some more to the ```persiste
 The final results after some iterations of running ```main.java``` looked like this: 
 
 ![](images/kjøring.JPG)
+
+***We can see the elements of the database and its corresponding size.***
+
 
 ### Experiment 2 
 [EXP 2: Banking example JPA](https://github.com/ImGoze/DAT250H20/tree/master/expass2/dat250-jpa-code/eclipselink/jpa-basic/src/main/java/banking)
