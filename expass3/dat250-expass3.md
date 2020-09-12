@@ -43,3 +43,54 @@ The only issue I get is when trying to validate the packages. It seems like it c
 
         !()[screenshots/example2.PNG]
 
+### My mapreduce-function 
+Using the orders database from earlier example, and I wanna use it to see those who ordered chocolates and see how much they did spend on chocolate.
+```javascript
+db.orders.insertMany([
+   { _id: 1, cust_id: "Ant O. Knee", ord_date: new Date("2020-03-01"), price: 25, items: [ { sku: "oranges", qty: 5, price: 2.5 }, { sku: "apples", qty: 5, price: 2.5 } ], status: "A" },
+   { _id: 2, cust_id: "Ant O. Knee", ord_date: new Date("2020-03-08"), price: 70, items: [ { sku: "oranges", qty: 8, price: 2.5 }, { sku: "chocolates", qty: 5, price: 10 } ], status: "A" },
+   { _id: 3, cust_id: "Busby Bee", ord_date: new Date("2020-03-08"), price: 50, items: [ { sku: "oranges", qty: 10, price: 2.5 }, { sku: "pears", qty: 10, price: 2.5 } ], status: "A" },
+   { _id: 4, cust_id: "Busby Bee", ord_date: new Date("2020-03-18"), price: 25, items: [ { sku: "oranges", qty: 10, price: 2.5 } ], status: "A" },
+   { _id: 5, cust_id: "Busby Bee", ord_date: new Date("2020-03-19"), price: 50, items: [ { sku: "chocolates", qty: 5, price: 10 } ], status: "A"},
+   { _id: 6, cust_id: "Cam Elot", ord_date: new Date("2020-03-19"), price: 35, items: [ { sku: "carrots", qty: 10, price: 1.0 }, { sku: "apples", qty: 10, price: 2.5 } ], status: "A" },
+   { _id: 7, cust_id: "Cam Elot", ord_date: new Date("2020-03-20"), price: 25, items: [ { sku: "oranges", qty: 10, price: 2.5 } ], status: "A" },
+   { _id: 8, cust_id: "Don Quis", ord_date: new Date("2020-03-20"), price: 75, items: [ { sku: "chocolates", qty: 5, price: 10 }, { sku: "apples", qty: 10, price: 2.5 } ], status: "A" },
+   { _id: 9, cust_id: "Don Quis", ord_date: new Date("2020-03-20"), price: 55, items: [ { sku: "carrots", qty: 5, price: 1.0 }, { sku: "apples", qty: 10, price: 2.5 }, { sku: "oranges", qty: 10, price: 2.5 } ], status: "A" },
+   { _id: 10, cust_id: "Don Quis", ord_date: new Date("2020-03-23"), price: 25, items: [ { sku: "oranges", qty: 10, price: 2.5 } ], status: "A" }
+])
+
+var mapFunction1 = function() {
+   emit(this.cust_id, this.price);
+};
+
+var reduceFunction1 = function(keyCustId, valuesPrices) {
+   return Array.sum(valuesPrices);
+};
+
+db.orders.mapReduce(
+    mapFunction1,
+    reduceFunction1,
+    {
+        query: { "items.sku" : "chocolates" },
+        out: "chocolates_lovers"
+    }
+)
+
+db.chocolates_lovers.find()
+```
+
+This function gives us the output: 
+```
+{ "_id" : "Don Quis", "value" : 75 }
+{ "_id" : "Ant O. Knee", "value" : 70 }
+{ "_id" : "Busby Bee", "value" : 50 }
+```
+And we can see that that especially Don Quis is a "Chocolate_lover"
+
+* *Reason about why your implemented Map-reduce operation in Experiment 2 is useful and interpret the collection obtained*
+
+Its not usefull, but it gives us a clear view of those customers which use too much money on chocolate, so for health its probably usefull, other than that not so much.. 
+
+* *Any pending issues with this assignment which you did not manage to solve*
+
+Currently the only problem not solved is validating the binaries with SHA256. 
