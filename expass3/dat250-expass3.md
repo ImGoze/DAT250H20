@@ -50,7 +50,7 @@ I found out that the sigHash file, was a text-file and not a SHA256-file. So i s
         !()[screenshots/example2.PNG]
 
 ### My mapreduce-function 
-Using the orders database from earlier example, and I wanna use it to see those who ordered chocolates and see how much they did spend on chocolate.
+Using the orders database from earlier example, and I wanna use it to see those who ordered chocolates and see how much money they spent in total the time they bought chocolate.
 ```javascript
 db.orders.insertMany([
    { _id: 1, cust_id: "Ant O. Knee", ord_date: new Date("2020-03-01"), price: 25, items: [ { sku: "oranges", qty: 5, price: 2.5 }, { sku: "apples", qty: 5, price: 2.5 } ], status: "A" },
@@ -91,7 +91,7 @@ This function gives us the output:
 { "_id" : "Ant O. Knee", "value" : 70 }
 { "_id" : "Busby Bee", "value" : 50 }
 ```
-And we can see that that especially Don Quis is a "Chocolate_lover"
+And we can see who bought chocolate, and how much they spent in total when they did. 
 
 * *Reason about why your implemented Map-reduce operation in Experiment 2 is useful and interpret the collection obtained*
 
