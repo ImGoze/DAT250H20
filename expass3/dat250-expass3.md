@@ -8,9 +8,15 @@ I did not encounter big issues while installing MongoDB, I added the bin-directo
 The only issue I get is when trying to validate the packages. It seems like it can't find the SHA256 of the MongoDB-binaries, shown below:
 ![]screenshots/sha256false.PNG()
 
+I found out that the sigHash file, was a text-file and not a SHA256-file. So i simply just removed .txt from the filename, and then it worked! 
+
 
 * *Screenshots for*:
     - The correct validation of the installation package (https://docs.mongodb.com/manual/tutorial/verify-mongodb-packages/)
+
+    ![](screenshots/verified.PNG)
+
+
 
     - Relevant results obtained during Experiment 1 (it is not necessary to put a single screenshot on each substep, but at least one significant from each CRUD operation).
 
@@ -93,4 +99,4 @@ Its not usefull, but it gives us a clear view of those customers which use too m
 
 * *Any pending issues with this assignment which you did not manage to solve*
 
-Currently the only problem not solved is validating the binaries with SHA256. 
+Currently the only problem not solved is validating the binaries with SHA256. (**SOLVED**)
