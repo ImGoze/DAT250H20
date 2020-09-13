@@ -6,7 +6,7 @@ I did not encounter big issues while installing MongoDB, I added the bin-directo
 ![](screenshots/mongodb.PNG)
 
 The only issue I get is when trying to validate the packages. It seems like it can't find the SHA256 of the MongoDB-binaries, shown below:
-![](screenshots/sha256false.PNG
+![](screenshots/sha256false.PNG)
 
 I found out that the sigHash file, was a text-file and not a SHA256-file. So i simply just removed .txt from the filename, and then it worked! 
 
