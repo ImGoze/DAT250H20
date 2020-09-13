@@ -95,7 +95,7 @@ And we can see who bought chocolate, and how much they spent in total when they 
 
 * *Reason about why your implemented Map-reduce operation in Experiment 2 is useful and interpret the collection obtained*
 
-Its not usefull, but it gives us a clear view of those customers which use too much money on chocolate, so for health its probably usefull, other than that not so much.. 
+Its not usefull, but its just a fun-fact to see how much people is shopping in total when they do shop chocolate.
 
 * *Any pending issues with this assignment which you did not manage to solve*
 
