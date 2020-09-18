@@ -140,7 +140,7 @@ We can peek the database:
 
 ![](img/updatedDB.PNG)
 
-and we can see its updated on ID 202. Can also run localhost:8080/todos/2020 to double check, we then get: 
+and we can see its updated on ID 202. Can also run localhost:8080/todos/202 to double check, we then get: 
 
 ```
 {"id":202,"summary":"Updated summary","description":"Updated"}
