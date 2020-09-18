@@ -78,7 +78,8 @@ With JSON-body:
 }
 ```
 
-Gives us:  ![adding](img/add.PNG)
+Gives us:  
+![adding](img/add.PNG)
 
 Now we can peek the database to see if it was added: 
 ![](img/addDB.PNG)
