@@ -82,6 +82,7 @@ Gives us:
 ![adding](img/add.PNG)
 
 Now we can peek the database to see if it was added: 
+
 ![](img/addDB.PNG)
 
 
@@ -102,6 +103,7 @@ Adding it then to a collection in Postman, and trying to get the element we adde
 GET localhost:8080/todos/202
 ```
 We then get following in postman:
+
 ![](img/get.PNG)
 
 And we know this the right one. 
@@ -135,6 +137,7 @@ With body:
 ```
 
 We can peek the database: 
+
 ![](img/updatedDB.PNG)
 
 and we can see its updated on ID 202. Can also run localhost:8080/todos/2020 to double check, we then get: 
