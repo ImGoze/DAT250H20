@@ -116,10 +116,10 @@ We here see the customers.
 	* Did'nt have any big issues with the tutorial. Main-issue I had was trying to run the *"Create an application class"* example, where we should use a logger to get the output. Did'nt fully understand what to do here. The other only thing I struggled with was trying to build the project as a JAR then trying to run it. 
 
 * *A link to your code for experiment 1-4 above* 
-	* [Experiment 1]()
-	* [Experiment 2]()
-	* [Experiment 3]()
-	* [Experiment 4]()
+	* [Experiment 1 - Getting Started](https://github.com/ImGoze/DAT250H20/tree/master/expass5/demo)
+	* [Experiment 2 - Spring Boot](https://github.com/ImGoze/DAT250H20/tree/master/expass5/gs-spring-boot-master)
+	* [Experiment 3 - Rest Service](https://github.com/ImGoze/DAT250H20/tree/master/expass5/gs-rest-service-master)
+	* [Experiment 4 - Data Access](https://github.com/ImGoze/DAT250H20/tree/master/expass5/gs-accessing-data-jpa-master)
 
 * Any pending issues with this assignment which you did not manage to solve
 	* Both issues I mentioned earlier i've yet not solved
