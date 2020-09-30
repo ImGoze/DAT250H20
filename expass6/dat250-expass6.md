@@ -31,13 +31,9 @@ Which gives this extra page:
 
 and when you click ```here``` you come to the ```localhost:8080/greeting``` page.
 
-### Experiment 2 - Experiment 2: Single-page Web Applications
+### Experiment 2 - Single-page Web Applications
 
-Followed the tutorial from [React tutorial](https://reactjs.org/tutorial/tutorial.html)
-
-I chose to use Node.js with Visual Studio Code. 
-
-Completing the tutorial gave me a nice-functioning tic-tac-toe game. Running the program with 
+Followed the tutorial from [React tutorial](https://reactjs.org/tutorial/tutorial.html). I chose to use Node.js with Visual Studio Code. Completing the tutorial gave me a nice-functioning tic-tac-toe game. Running the program with 
 
 ```npm start```
 
@@ -56,9 +52,9 @@ This gif shows a iteration of the game in browser:
     - Did not encounter any issues of with completing the tutorials. 
 
 - *A link to your code for experiments 1-2 above*
-    - []()
+    - [Experiment 1 - Modell-View-Controller Web Applications](https://github.com/ImGoze/DAT250H20/tree/master/expass6/gs-serving-web-content-master)
 
-    - []()
+    - [Experiment 2 - Single-page Web Applications](https://github.com/ImGoze/DAT250H20/tree/master/expass6/my-app)
 
 - *Any pending issues with this assignment which you did not manage to solve*
     - Don't have any pending issues. Good tutorials! 
