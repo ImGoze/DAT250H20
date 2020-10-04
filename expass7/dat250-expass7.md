@@ -57,9 +57,9 @@ And we can see we have waited and received the sent error:
 * *A link to your code for experiments 1-4 above*
 
     * Experiment 1 - *No code for this one, just installation*
-    * Experiment 2 - [Hello World!]()
-    * Experiment 3 - [Work queues]()
-    * Experiment 4 - [Topics]()
+    * Experiment 2 - [Hello World!](https://github.com/ImGoze/DAT250H20/tree/master/expass7/Hello_World)
+    * Experiment 3 - [Work queues](https://github.com/ImGoze/DAT250H20/tree/master/expass7/Work_Queues)
+    * Experiment 4 - [Topics](https://github.com/ImGoze/DAT250H20/tree/master/expass7/Topic)
 
 * *Any pending issues with this assignment which you did not manage to solve*
     * *No pending issues*
